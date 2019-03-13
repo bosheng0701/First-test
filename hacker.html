@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> 註冊表單 </title>
+    <meta charset="utf-8">
+    <style>
+       form {
+            border-style: groove; 
+            background-color: aqua;
+        }
+        p{
+            margin-left: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="POST">
+        <p>
+            姓名: <input type="text" name="usr_name" required="required" />
+        </p>
+        <p>
+            密碼: <input type="password" name="password" value="" required="required">
+        </p>
+        <p>
+            Email:<input type="email" name="mail" value="example@mail.com" required="required">
+        </p>
+        <p>
+            生日:<input type="date" name="birthday" value="YY/MM/DD" required="required">
+        </p>
+        <p>
+            性別:<input type="radio" name="sex" required="required">男
+            <input type="radio" name="sex">女
+            <input type="radio" name="sex">其他
+        </p>
+        <p>
+            專長:<input type="checkbox" name="expertise" required="required">電腦系統
+            <input type="checkbox" name="expertise">網路資安
+            <input type="checkbox" name="expertise">軟體工程
+        </p>
+        <p>
+            年級:<select>
+                <option>大一</option>
+                <option>大二</option>
+                <option>大三</option>
+                <option>大四</option>
+            </select>
+        </p>
+        <p> <input type="submit" value="註冊" style="background-color:darkorange"> 
+            <input type="reset">
+        </p>
+    </form>
+</body>
+
+</html>
